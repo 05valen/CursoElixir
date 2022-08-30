@@ -9,7 +9,7 @@ defmodule SophosApp.GenericServer do
       msg ->
         {:ok, result, new_state} = module.handle_message(msg, caller, state)
         send(caller, result)
-        loop(module, caller, new_state)
+        loop(module, caller, new_state)  #para que la funcion no muera 
     end
   end
 end
