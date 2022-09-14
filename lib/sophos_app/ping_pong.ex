@@ -1,4 +1,4 @@
-defmodule PingPong do
+defmodule SophosApp.PingPong do
 
   def start() do
     pid_pingPong = spawn(__MODULE__, :pingPong, [])
